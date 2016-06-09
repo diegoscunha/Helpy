@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+
+from gluon.tools import Service
+service = Service(globals())
+
+@service.soap('obterNomeDisciplina', returns={'result':str}, args={'codigo':str})
+def getNomeDisciplina(codigo):
+    disciplinas = dict(MATA37='Introdução à Logica de Programação.',
+                       MATA49='Programação de Software Básico.',
+                       MATA55='Programação Orientada a Objetos.',
+                       MATA58='Sistemas Operacionais.',
+                       MATA60='Banco de Dados.',
+                       MATA61='Compiladores.',
+                       MATA64='Inteligência Artificial.',
+                       MATA88='Fundamentos de Sistemas Distribuídos.',
+                       MATC72='Interação Humano-Computador.',
+                       MATC82='Sistemas Web.',
+                       MATC89='Aplicações para Dispositivos Móveis.')
+    if(disciplinas.has_key(codigo)):
+        return disciplinas[codigo]
+    return "Nenhuma disciplina foi localizada."
+
+def call():
+    return service()
+
+def test_soap_sub():
+    from gluon.contrib.pysimplesoap.client import SoapClient, SoapFault
+    # build the url to the WSDL (web service description)
+    # like "http://localhost:8000/webservices/sample/call/soap?WSDL"
+    url = URL(f="call/soap", vars={"WSDL": ""}, scheme=True)
+    # create a SOAP client
+    client = SoapClient(wsdl="http://diegocunha.pythonanywhere.com/Helpy/webservices/call/soap?WSDL")
+    # call the SOAP remote method
+    try:
+        ret = client.obterNomeDisciplina(codigo='MATC82')
+        result = ret
+    except SoapFault, sf:
+        result = sf
+    return dict(result=result)
+
+@request.restful()
+def soma():
+
+    def GET(*args, **vars):
+        resultado = 0.0
+        try:
+            for v in args:
+                resultado += float(v)
+        except Exception as ex:
+            resultado = ex
+        return response.json({"resultado" : str(resultado)})
+
+    return locals()
+
+@request.restful()
+def subtracao():
+
+    def GET(*args, **vars):
+        resultado = 0.0
+        if len(args) > 0:
+            resultado = float(args[0])
+            try:
+                for v in args[1:]:
+                    resultado -= float(v)
+            except Exception as ex:
+                resultado = ex
+        return response.json({"resultado" : str(resultado)})
+
+    return locals()
+
+@request.restful()
+def multiplicacao():
+
+    def GET(*args, **vars):
+        resultado = 0.0
+        if len(args) > 0:
+            resultado = float(args[0])
+            try:
+                for v in args[1:]:
+                    resultado *= float(v)
+            except Exception as ex:
+                resultado = ex
+        return response.json({"resultado" : str(resultado)})
+
+    return locals()
+
+@request.restful()
+def divisao():
+
+    def GET(*args, **vars):
+        resultado = 0.0
+        if len(args) > 0:
+            resultado = float(args[0])
+            try:
+                for v in args[1:]:
+                    resultado /= float(v)
+            except Exception as ex:
+                resultado = ex
+        return response.json({"resultado" : str(resultado)})
+
+    return locals()

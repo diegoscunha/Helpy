@@ -1,0 +1,143 @@
+(dp1
+S'categoria_id'
+p2
+(dp3
+S'length'
+p4
+I512
+sS'unique'
+p5
+I00
+sS'sortable'
+p6
+I6
+sS'sql'
+p7
+S'INTEGER REFERENCES categoria (id) ON DELETE CASCADE  NOT NULL '
+p8
+sS'notnull'
+p9
+I01
+sS'type'
+p10
+S'reference categoria'
+p11
+ssS'responsavel_id'
+p12
+(dp13
+g4
+I512
+sg5
+I00
+sg6
+I3
+sg7
+S'INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  NOT NULL '
+p14
+sg9
+I01
+sg10
+S'reference auth_user'
+p15
+ssS'situacao_id'
+p16
+(dp17
+g4
+I512
+sg5
+I00
+sg6
+I4
+sg7
+S'INTEGER REFERENCES situacao (id) ON DELETE CASCADE  NOT NULL '
+p18
+sg9
+I01
+sg10
+S'reference situacao'
+p19
+ssS'chamado_id'
+p20
+(dp21
+g4
+I512
+sg5
+I00
+sg6
+I2
+sg7
+S'INTEGER REFERENCES chamado (id) ON DELETE CASCADE  NOT NULL '
+p22
+sg9
+I01
+sg10
+S'reference chamado'
+p23
+ssS'prioridade_id'
+p24
+(dp25
+g4
+I512
+sg5
+I00
+sg6
+I5
+sg7
+S'INTEGER REFERENCES prioridade (id) ON DELETE CASCADE  NOT NULL '
+p26
+sg9
+I01
+sg10
+S'reference prioridade'
+p27
+ssS'id'
+p28
+(dp29
+g4
+I512
+sg5
+I00
+sg6
+I1
+sg7
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p30
+sg9
+I00
+sg10
+S'id'
+p31
+ssS'data'
+p32
+(dp33
+g4
+I512
+sg5
+I00
+sg6
+I7
+sg7
+S'CHAR(512) NOT NULL'
+p34
+sg9
+I01
+sg10
+S'string'
+p35
+ssS'comentario'
+p36
+(dp37
+g4
+I512
+sg5
+I00
+sg6
+I8
+sg7
+S'CHAR(512) NOT NULL'
+p38
+sg9
+I01
+sg10
+g35
+ss.

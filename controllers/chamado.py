@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+@auth.requires_login()
+def index():
+    redirect(URL('listar'))
+
+@auth.requires_login()
+def inserir():
+    pass
