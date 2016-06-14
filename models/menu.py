@@ -9,12 +9,12 @@ response.logo = A(B('web',SPAN(2),'py'),XML('&trade;&nbsp;'),
                   _class="navbar-brand",_href="http://www.web2py.com/",
                   _id="web2py-logo")
 response.title = request.application.replace('_',' ').title()
-response.subtitle = ''
+response.subtitle = 'Controle de chamados'
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
-response.meta.author = 'Your Name <you@example.com>'
-response.meta.description = 'a cool new app'
-response.meta.keywords = 'web2py, python, framework'
+response.meta.author = 'Diego Cunha <diego@weblineti.com.br>'
+response.meta.description = 'sistema de abertura de chamados.'
+response.meta.keywords = 'helpy, helpydesk, helpdesk, chamados, weblineti, proprefeito'
 response.meta.generator = 'Web2py Web Framework'
 
 ## your http://google.com/analytics id
@@ -28,6 +28,23 @@ response.menu = [
     (T('Home'), False, URL('default', 'index'), [])
 ]
 
+# menu novo, verificar o item MENU PRINCIPAL que ainda não funciona corretamente
+response.menu_html = MENU([('MENU PRINCIPAL', None, '#', []),
+            (I('', _class='fa  fa-database') + SPAN('Cadastros') + I('', _class='fa fa-angle-left pull-right'), False, '#', [
+                (I('', _class='fa fa-circle-o') + 'Cadastro básico' + I('', _class='fa fa-angle-left pull-right'), False, '#', [
+                    (I('', _class='fa fa-circle-o') + 'Categoria', False, URL('categoria', 'index'), []),
+                    (I('', _class='fa fa-circle-o') + 'Prioridade', False, URL('prioridade', 'index'), []),
+                    (I('', _class='fa fa-circle-o') + 'Situação', False, URL('situacao', 'index'), []),
+                    (I('', _class='fa fa-circle-o') + 'Tipo de avaliação', False, URL('tipo_avaliacao', 'index')),
+                    (I('', _class='fa fa-circle-o') + 'Tipo de chamado', False, URL('tipo_chamado', 'index')),
+                    (I('', _class='fa fa-circle-o') + 'Tipo de contato', False, URL('tipo_contato', 'index')),
+                ]),
+                (I('', _class='fa fa-circle-o') + 'Cliente', False, URL('cliente', 'index'), []),
+                (I('', _class='fa fa-circle-o') + 'Gerenciar Usuários', False, URL('usuario', 'index'), []),
+                (I('', _class='fa fa-circle-o') + 'Setor', False, URL('setor', 'index'), []),
+                (I('', _class='fa fa-circle-o') + 'Sistema', False, URL('sistema', 'index'), [])
+            ])
+	], _class='sidebar-menu', li_class='treeview',ul_class='treeview-menu', li_first='header')
 DEVELOPMENT_MENU = True
 
 #########################################################################

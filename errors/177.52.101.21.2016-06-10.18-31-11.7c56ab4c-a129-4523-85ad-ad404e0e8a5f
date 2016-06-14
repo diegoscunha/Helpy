@@ -1,0 +1,684 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.Exception'> Server address not specified"
+p3
+sS'layer'
+p4
+S'/home/diegocunha/web2py/applications/Helpy/controllers/default.py'
+p5
+sS'code'
+p6
+S'# -*- coding: utf-8 -*-\n\ndef index():\n    if auth.is_logged_in():\n        redirect(URL(\'sistema\', \'index\'))\n    form_login=auth.login()\n    if form_login.errors:\n        pass\n    form_login.element(_name=\'username\').update(_class=\'form-control\', _placeholder=\'Usu\xc3\xa1rio\')\n    form_login.element(_name=\'password\').update(_class=\'form-control\', _placeholder=\'Senha\')\n    form_login.element(_type=\'submit\').update(_class=\'btn btn-primary btn-block btn-flat\', _value=\'Entrar\')\n    return dict(form_login=form_login)\n\ndef user():\n    """\n    exposes:\n    http://..../[app]/default/user/login\n    http://..../[app]/default/user/logout\n    http://..../[app]/default/user/register\n    http://..../[app]/default/user/profile\n    http://..../[app]/default/user/retrieve_password\n    http://..../[app]/default/user/change_password\n    http://..../[app]/default/user/manage_users (requires membership in\n    http://..../[app]/default/user/bulk_register\n    use @auth.requires_login()\n        @auth.requires_membership(\'group name\')\n        @auth.requires_permission(\'read\',\'table name\',record_id)\n    to decorate functions that need access control\n    """\n    return dict(form=auth())\n\nresponse._vars=response._caller(user)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.Exception object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.Exception object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.Exception object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.Exception object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.Exception object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.Exception object>'
+p23
+sS'args'
+p24
+S"('Server address not specified',)"
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.Exception object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.Exception object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.Exception object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.Exception object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.Exception'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.Exception object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.Exception object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.Exception object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.Exception object>'
+p47
+sS'__doc__'
+p48
+S"'Common base class for all non-exit exceptions.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.Exception object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S'Server address not specified'
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\x82Z\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>Helpy</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>request_reset_password</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_helpy</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21-ece763d1-1b0a-4dbf-9682-aa49b27288d3<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_LENGTH</td><td style="vertical-align:top;">:</td><td><div>507</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_TYPE</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=----WebKitFormBoundaryHfuItYHsT0cBrX2t</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">DOCUMENT_ROOT</td><td style="vertical-align:top;">:</td><td><div>/usr/local/openresty/nginx/html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CACHE_CONTROL</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>close</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONTENT_LENGTH</td><td style="vertical-align:top;">:</td><td><div>507</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONTENT_TYPE</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=----WebKitFormBoundaryHfuItYHsT0cBrX2t</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>_ga=GA1.2.617993834.1463488187; session_id_welcome=177.52.101.21-ece763d1-1b0a-4dbf-9682-aa49b27288d3; session_id_helpy=177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ORIGIN</td><td style="vertical-align:top;">:</td><td><div>http://diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://diegocunha.pythonanywhere.com/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_UPGRADE_INSECURE_REQUESTS</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_VIA</td><td style="vertical-align:top;">:</td><td><div>1.1 SRVALPWSA004.corporate.group:3128 (Cisco-IronPort-WSA/7.5.0-833)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_FORWARDED_FOR</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_IMFORWARDS</td><td style="vertical-align:top;">:</td><td><div>20</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_REAL_IP</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>10.111.216.9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>55728</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>POST</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_URI</td><td style="vertical-align:top;">:</td><td><div>/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>80</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/diegocunha/web2py/applications/welcome/&#x27;, &#x27;/home/diegocunha/web2py/applications/admin/&#x27;, &#x27;/home/diegocunha/web2py/applications/Helpy/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_length</td><td style="vertical-align:top;">:</td><td><div>507</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_type</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=----WebKitFormBoundaryHfuItYHsT0cBrX2t</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">document_root</td><td style="vertical-align:top;">:</td><td><div>/usr/local/openresty/nginx/html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cache_control</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>close</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_content_length</td><td style="vertical-align:top;">:</td><td><div>507</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_content_type</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=----WebKitFormBoundaryHfuItYHsT0cBrX2t</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>_ga=GA1.2.617993834.1463488187; session_id_welcome=177.52.101.21-ece763d1-1b0a-4dbf-9682-aa49b27288d3; session_id_helpy=177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_origin</td><td style="vertical-align:top;">:</td><td><div>http://diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://diegocunha.pythonanywhere.com/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_upgrade_insecure_requests</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_via</td><td style="vertical-align:top;">:</td><td><div>1.1 SRVALPWSA004.corporate.group:3128 (Cisco-IronPort-WSA/7.5.0-833)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_forwarded_for</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_imforwards</td><td style="vertical-align:top;">:</td><td><div>20</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_real_ip</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>giles-liveweb8</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>50.19.109.98</div></td></tr><tr><td><div>localhost</div></td></tr><tr><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>10.111.216.9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>55728</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>POST</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>80</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi.node</td><td style="vertical-align:top;">:</td><td><div>giles-liveweb8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi.version</td><td style="vertical-align:top;">:</td><td><div>2.0.5.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi_node</td><td style="vertical-align:top;">:</td><td><div>giles-liveweb8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi_version</td><td style="vertical-align:top;">:</td><td><div>2.0.5.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f2cc51e0290&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;built-in function uwsgi_sendfile&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi._Input object at 0x7f2ccf694f60&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f2cc51e0290&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;built-in function uwsgi_sendfile&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi._Input object at 0x7f2ccf694f60&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py/applications/Helpy/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>user</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/diegocunha/web2py/applications/welcome/&#x27;, &#x27;/home/diegocunha/web2py/applications/admin/&#x27;, &#x27;/home/diegocunha/web2py/applications/Helpy/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>giles-liveweb8</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>50.19.109.98</div></td></tr><tr><td><div>localhost</div></td></tr><tr><td><div>diegocunha.pythonanywhere.com</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 6, 10, 18, 31, 11, 762635)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div>request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/Helpy/default/user/request_reset_password</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 6, 10, 18, 31, 11, 762653)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x7f2cb3f9f990&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/home/diegocunha/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x7f2cb32bb9b0, file "/...plications/Helpy/controllers/default.py", line 3>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S"(code='# -*- coding: utf-8 -*-\\n\\ndef index():\\n    if aut...m=auth())\\n\\nresponse._vars=response._caller(user)\\n', environment={'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}, layer='/home/diegocunha/web2py/applications/Helpy/controllers/default.py')"
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/home/diegocunha/web2py/applications/Helpy/controllers/default.py'
+p88
+sg64
+(dp89
+sg70
+I32
+sg71
+(dp90
+I21
+S'    http://..../[app]/default/user/retrieve_password'
+p91
+sI22
+S'    http://..../[app]/default/user/change_password'
+p92
+sI23
+S'    http://..../[app]/default/user/manage_users (requires membership in'
+p93
+sI24
+S'    http://..../[app]/default/user/bulk_register'
+p94
+sI25
+S'    use @auth.requires_login()'
+p95
+sI26
+S"        @auth.requires_membership('group name')"
+p96
+sI27
+S"        @auth.requires_permission('read','table name',record_id)"
+p97
+sI28
+S'    to decorate functions that need access control'
+p98
+sI29
+S'    """'
+p99
+sI30
+S'    return dict(form=auth())'
+p100
+ssg83
+S'()'
+p101
+sg85
+S'<module>'
+p102
+sa(dp103
+g62
+S'/home/diegocunha/web2py/gluon/globals.py'
+p104
+sg64
+(dp105
+S'self'
+p106
+S'undefined'
+p107
+sS'f'
+S'<function user>'
+p108
+ssg70
+I417
+sg71
+(dp109
+I416
+S'        self._vars = None'
+p110
+sI417
+S'        self._caller = lambda f: f()'
+p111
+sI418
+S'        self._view_environment = None'
+p112
+sI419
+S'        self._custom_commit = None'
+p113
+sI420
+S'        self._custom_rollback = None'
+p114
+sI421
+S"        self.generic_patterns = ['*']"
+p115
+sI412
+S"        self.flash = ''            # used by the default view layout"
+p116
+sI413
+S'        self.meta = Storage()      # used by web2py_ajax.html'
+p117
+sI414
+S'        self.menu = []             # used by the default view layout'
+p118
+sI415
+S'        self.files = []            # used by web2py_ajax.html'
+p119
+ssg83
+S'(f=<function user>)'
+p120
+sg85
+S'<lambda>'
+p121
+sa(dp122
+g62
+S'/home/diegocunha/web2py/applications/Helpy/controllers/default.py'
+p123
+sg64
+(dp124
+S'global auth'
+p125
+S'<gluon.tools.Auth object>'
+p126
+sS'form'
+p127
+g107
+sS'builtindict'
+p128
+S"<type 'dict'>"
+p129
+ssg70
+I30
+sg71
+(dp130
+I21
+S'    http://..../[app]/default/user/retrieve_password'
+p131
+sI22
+S'    http://..../[app]/default/user/change_password'
+p132
+sI23
+S'    http://..../[app]/default/user/manage_users (requires membership in'
+p133
+sI24
+S'    http://..../[app]/default/user/bulk_register'
+p134
+sI25
+S'    use @auth.requires_login()'
+p135
+sI26
+S"        @auth.requires_membership('group name')"
+p136
+sI27
+S"        @auth.requires_permission('read','table name',record_id)"
+p137
+sI28
+S'    to decorate functions that need access control'
+p138
+sI29
+S'    """'
+p139
+sI30
+S'    return dict(form=auth())'
+p140
+ssg83
+S'()'
+p141
+sg85
+S'user'
+p142
+sa(dp143
+g62
+S'/home/diegocunha/web2py/gluon/tools.py'
+p144
+sg64
+(dp145
+S'self'
+p146
+S'<gluon.tools.Auth object>'
+p147
+sS'args'
+p148
+S"['request_reset_password']"
+p149
+sS'builtingetattr'
+p150
+S'<built-in function getattr>'
+p151
+ssg70
+I1941
+sg71
+(dp152
+I1936
+S"                       'impersonate', 'not_authorized', 'confirm_registration',"
+p153
+sI1937
+S"                       'bulk_register', 'manage_tokens', 'jwt'):"
+p154
+sI1938
+S"            if len(request.args) >= 2 and args[0] == 'impersonate':"
+p155
+sI1939
+S'                return getattr(self, args[0])(request.args[1])'
+p156
+sI1940
+S'            else:'
+p157
+sI1941
+S'                return getattr(self, args[0])()'
+p158
+sI1942
+S"        elif args[0] == 'cas' and not self.settings.cas_provider:"
+p159
+sI1943
+S"            if args(1) == self.settings.cas_actions['login']:"
+p160
+sI1944
+S'                return self.cas_login(version=2)'
+p161
+sI1945
+S"            elif args(1) == self.settings.cas_actions['validate']:"
+p162
+ssg83
+S'(self=<gluon.tools.Auth object>)'
+p163
+sg85
+S'__call__'
+p164
+sa(dp165
+g62
+S'/home/diegocunha/web2py/gluon/tools.py'
+p166
+sg64
+(dp167
+S'self'
+p168
+S'<gluon.tools.Auth object>'
+p169
+sS'self.email_reset_password'
+p170
+S'<bound method Auth.email_reset_password of <gluon.tools.Auth object>>'
+p171
+sS'user'
+p172
+S"<Row {'auth_event': <Set (auth_event.user_id = 1...embership': <Set (auth_membership.user_id = 1)>}>"
+p173
+ssg70
+I3874
+sg71
+(dp174
+I3872
+S'                redirect(self.url(args=request.args),'
+p175
+sI3873
+S'                         client_side=self.settings.client_side)'
+p176
+sI3874
+S'            if self.email_reset_password(user):'
+p177
+sI3875
+S'                session.flash = self.messages.email_sent'
+p178
+sI3876
+S'            else:'
+p179
+sI3877
+S'                session.flash = self.messages.unable_to_send_email'
+p180
+sI3878
+S'            self.log_event(log, user)'
+p181
+sI3869
+S'                         client_side=self.settings.client_side)'
+p182
+sI3870
+S"            elif key in ('pending', 'disabled', 'blocked') or (key or '').startswith('pending'):"
+p183
+sI3871
+S'                session.flash = self.messages.registration_pending'
+p184
+ssg83
+S"(self=<gluon.tools.Auth object>, next='/Helpy/default/user/login', onvalidation=[], onaccept=[], log='User %(id)s Password reset')"
+p185
+sg85
+S'request_reset_password'
+p186
+sa(dp187
+g62
+S'/home/diegocunha/web2py/gluon/tools.py'
+p188
+sg64
+(dp189
+S'd'
+S"{'auth_cas': <Set (auth_cas.user_id = 1)>, 'auth_event': <Set (auth_event.user_id = 1)>, 'auth_membership': <Set (auth_membership.user_id = 1)>, 'chamado': <Set (chamado.responsavel_id = 1)>, 'cliente_id': 1L, 'delete_record': <pydal.helpers.classes.RecordDeleter object>, 'email': 'diego2912@gmail.com', 'first_name': 'Diego', 'historico_chamado': <Set (historico_chamado.responsavel_id = 1)>, 'id': 1L, ...}"
+p190
+sS'message'
+p191
+g107
+sS'self.messages.reset_password'
+p192
+S"<lazyT 'Click on the link %(link)s to reset your password'>"
+p193
+sS'self'
+p194
+S'<gluon.tools.Auth object>'
+p195
+sS'self.messages'
+p196
+S"<Storage {'invalid_email': 'Invalid email', 'ver...': 'Old password', 'label_username': 'Username'}>"
+p197
+ssg70
+I3898
+sg71
+(dp198
+I3893
+S'        d = dict(user)'
+p199
+sI3894
+S'        d.update(dict(key=reset_password_key, link=link))'
+p200
+sI3895
+S'        if self.settings.mailer and self.settings.mailer.send('
+p201
+sI3896
+S'            to=user.email,'
+p202
+sI3897
+S'            subject=self.messages.reset_password_subject,'
+p203
+sI3898
+S'                message=self.messages.reset_password % d):'
+p204
+sI3899
+S'            user.update_record(reset_password_key=reset_password_key)'
+p205
+sI3900
+S'            return True'
+p206
+sI3901
+S'        return False'
+p207
+sI3902
+S''
+ssg83
+S"(self=<gluon.tools.Auth object>, user=<Row {'auth_event': <Set (auth_event.user_id = 1...embership': <Set (auth_membership.user_id = 1)>}>)"
+p208
+sg85
+S'email_reset_password'
+p209
+sa(dp210
+g62
+S'/home/diegocunha/web2py/gluon/tools.py'
+p211
+sg64
+(dp212
+S'builtinException'
+p213
+S"<type 'exceptions.Exception'>"
+p214
+ssg70
+I430
+sg71
+(dp215
+I425
+S'            return text'
+p216
+sI426
+S''
+sI427
+S'        sender = sender or self.settings.sender'
+p217
+sI428
+S''
+sI429
+S'        if not isinstance(self.settings.server, str):'
+p218
+sI430
+S"            raise Exception('Server address not specified')"
+p219
+sI431
+S'        if not isinstance(sender, str):'
+p220
+sI432
+S"            raise Exception('Sender address not specified')"
+p221
+sI433
+S''
+sI434
+S'        if not raw and attachments:'
+p222
+ssg83
+S"(self=<gluon.tools.Mail object>, to='diego2912@gmail.com', subject=<lazyT 'Password reset'>, message=<lazyT 'Click on the link %(link)s to reset your password'>, attachments=None, cc=None, bcc=None, reply_to=None, sender=None, encoding='utf-8', raw=False, headers={}, from_address=None, cipher_type=None, sign=None, sign_passphrase=None, encrypt=None, x509_sign_keyfile=None, x509_sign_chainfile=None, x509_sign_certfile=None, x509_crypt_certfiles=None, x509_nocerts=None)"
+p223
+sg85
+S'send'
+p224
+sasS'pyver'
+p225
+S'Python 2.7.6: /usr/local/bin/uwsgi (prefix: /usr)'
+p226
+sS'session'
+p227
+g57
+(S's\x1a\x00\x00\x00<div><table></table></div>'
+tRp228
+sS'etype'
+p229
+S"<type 'exceptions.Exception'>"
+p230
+sS'date'
+p231
+S'Fri Jun 10 18:31:12 2016'
+p232
+sS'response'
+p233
+g57
+(S'sG?\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x7f2cb2ab0ab0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_helpy</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div>: </div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>table3cols</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Principal</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Helpy/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Meus sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Esta aplica\xc3\xa7\xc3\xa3o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/Helpy</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controlador</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Visualiza\xc3\xa7\xc3\xa3o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/views/default/user.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo BD</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo de Menu</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Folha de estilo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Helpy/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>banco de dados</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Helpy/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Erros</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/Helpy</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Sobre</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/Helpy</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Suporte</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Exemplos r\xc3\xa1pidos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Perguntas frequentes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>V\xc3\xaddeos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Aplica\xc3\xa7\xc3\xb5es gratuitas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Receitas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documenta\xc3\xa7\xc3\xa3o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Pref\xc3\xa1cio</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introdu\xc3\xa7\xc3\xa3o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Vis\xc3\xa3o Geral</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>As views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>banco de dados</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Formul\xc3\xa1rios e Validadores</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email e SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Controle de Acesso</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Servi\xc3\xa7o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Receitas de Ajax</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Componentes e Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Receitas de deploy</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Outras Receitas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Compre o livro web2py\'s</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Comunidade</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Grupos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Chat ao vivo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/user/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_helpy</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/home/diegocunha/web2py/applications/Helpy/sessions/16b/1ec/177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6&#x27;, mode &#x27;rb+&#x27; at 0x7f2cb3d63420&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/home/diegocunha/web2py/applications/Helpy/sessions/177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>d133e92865404493807b99e4c4fc1ff4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>177.52.101.21-4889aea6-70a3-4688-9d47-d207bd35fca6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_helpy</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>Helpy</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Helpy</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/user.html</div></td></tr></table></div>'
+tRp234
+sS'locals'
+p235
+(dp236
+S'from_address'
+p237
+S'None'
+p238
+sS'encoding'
+p239
+S"'utf-8'"
+p240
+sS'cc'
+p241
+S'None'
+p242
+sS'sign'
+p243
+S'None'
+p244
+sS'raw'
+p245
+S'False'
+p246
+sS'cipher_type'
+p247
+S'None'
+p248
+sS'x509_sign_certfile'
+p249
+S'None'
+p250
+sS'encoded_or_raw'
+p251
+S'<function encoded_or_raw>'
+p252
+sS'message'
+p253
+S"<lazyT 'Click on the link %(link)s to reset your password'>"
+p254
+sS'subject'
+p255
+S"<lazyT 'Password reset'>"
+p256
+sS'encrypt'
+p257
+S'None'
+p258
+sS'x509_sign_keyfile'
+p259
+S'None'
+p260
+sS'self'
+p261
+S'<gluon.tools.Mail object>'
+p262
+sS'sign_passphrase'
+p263
+S'None'
+p264
+sS'to'
+p265
+S"'diego2912@gmail.com'"
+p266
+sS'encode_header'
+p267
+S'<function encode_header>'
+p268
+sS'x509_crypt_certfiles'
+p269
+S'None'
+p270
+sS'x509_nocerts'
+p271
+S'None'
+p272
+sS'sender'
+p273
+S'None'
+p274
+sS'x509_sign_chainfile'
+p275
+S'None'
+p276
+sS'bcc'
+p277
+S'None'
+p278
+sS'attachments'
+p279
+S'None'
+p280
+sS'headers'
+p281
+g45
+sS'reply_to'
+p282
+S'None'
+p283
+sssS'traceback'
+p284
+S'Traceback (most recent call last):\n  File "/home/diegocunha/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/home/diegocunha/web2py/applications/Helpy/controllers/default.py", line 32, in <module>\n  File "/home/diegocunha/web2py/gluon/globals.py", line 417, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/diegocunha/web2py/applications/Helpy/controllers/default.py", line 30, in user\n    return dict(form=auth())\n  File "/home/diegocunha/web2py/gluon/tools.py", line 1941, in __call__\n    return getattr(self, args[0])()\n  File "/home/diegocunha/web2py/gluon/tools.py", line 3874, in request_reset_password\n    if self.email_reset_password(user):\n  File "/home/diegocunha/web2py/gluon/tools.py", line 3898, in email_reset_password\n    message=self.messages.reset_password % d):\n  File "/home/diegocunha/web2py/gluon/tools.py", line 430, in send\n    raise Exception(\'Server address not specified\')\nException: Server address not specified\n'
+p285
+s.

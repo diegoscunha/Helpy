@@ -1,0 +1,11 @@
+# ignora errors
+errors/
+
+# ignora sessions
+sessions/
+
+# ignora arquivo .bank, .1, .log e .table
+.bank
+.1
+.log
+.table

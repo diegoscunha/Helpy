@@ -68,7 +68,7 @@ auth.settings.extra_fields['auth_user']= [
 auth.define_tables(username=True)
 
 # verificar primary key da tabela
-# TABLE liberacao_sistema
+# TABLE liberacao_sistema - OK
 db.define_table('liberacao_sistema',
                 Field('cliente_id', 'reference cliente', required=True, requires=IS_NOT_EMPTY('Campo obrigatório!'), notnull=True, label='Cliente'),
                 Field('solicitante_id', 'reference auth_user', required=True, requires=IS_NOT_EMPTY('Campo obrigatório!'), notnull=True, label='Solicitante'),
@@ -127,5 +127,16 @@ db.define_table('avaliacao_chamado',
 #auth.settings.registration_requires_verification = True # requer a confirmação do registro por e-mail
 #auth.settings.login_after_registration = True # faz o login do usuário após o registro
 #auth.settings.login_url = URL('user', args='login') # url de login
+auth.settings.login_url = URL('index', args='login')
 #auth.settings.login_next = URL('index') # página de redirecionamento após o login
+auth.settings.login_next = URL('dashboard', 'index') # página de redirecionamento após o login
+auth.settings.logout_next = URL('default', 'index')
 #auth.settings.expiration = 3600  # tempo até que a sessão do usuário expire, em segundos
+#auth.messages.submit_button = 'Entrar'
+auth.settings.hideerror = True
+
+db.auth_user.password.comment = 'Diegite a senha'
+auth.messages.invalid_login = 'Login ou senha inválidos'
+auth.messages.invalid_user = 'Usuário inválido'
+auth.messages.is_empty = "campo obrigatório"
+auth.messages.mismatched_password = "campos de senha devem ser iguais"
