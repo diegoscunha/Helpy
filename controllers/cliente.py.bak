@@ -54,7 +54,6 @@ def cliente_sistemas():
         elif form.errors:
             response.flash = 'Erros no formulário!'
     except Exception as ex:
-        return dict(form=form.vars.cliente_id)
         response.flash = 'Erro inesperado!'
     grid = SQLFORM.grid((db.cliente_sistema.cliente_id==cliente.id), field_id=db.cliente_sistema.cliente_id, user_signature=False)
     return dict(form=form, grid=grid)

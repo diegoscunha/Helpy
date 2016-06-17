@@ -23,7 +23,6 @@
   <link rel="stylesheet"  href="{{=URL('static','AdminLTE-2.3.3/dist/css/AdminLTE.min.css')}}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet"  href="{{=URL('static','AdminLTE-2.3.3/dist/css/skins/_all-skins.min.css')}}">
   <link rel="stylesheet" href="{{=URL('static','AdminLTE-2.3.3/dist/css/skins/_all-skins.min.css')}}">
   <!-- iCheck -->
   <link rel="stylesheet" href="{{=URL('static','AdminLTE-2.3.3/plugins/iCheck/flat/blue.css')}}">
@@ -503,8 +502,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        {{=controller}}
+        <small>{{=response.funcionalidade}}</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
