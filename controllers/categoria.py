@@ -10,37 +10,14 @@ def index():
 def listar():
     response.funcionalidade = 'Listagem'
     titulo = 'Listagem de Categorias'
-    if not request.vars['pagina']:
-        pagina = 1
-    else:
-        # Tenta converter o número da página
-        try:
-            pagina = int(request.vars['pagina'])
-        except ValueError:
-            # Redireciona para a página de erro
-            redirect(URL('erro', vars={'msg':'Numero da página inválido'}))
-    
-    # Se a página informada é 0, redireciona para a página 1
-    if pagina <= 0:
-        redirect(URL(args=1))
-    
-    # paginacao
-    regitros_pagina = 10
-    total = db(db.categoria).count()
-    total_paginas = total/regitros_pagina
-    if (total%regitros_pagina):
-        total_paginas += 1
-
-    limite_inferior = regitros_pagina*(pagina-1)
-    limite_superior = regitros_pagina*pagina
-    
-    categorias = db(db.categoria).select(limitby=(limite_inferior, limite_superior))
-    
-    msg = "Exibindo {} à {} de {} resultados".format(pagina, total_paginas, total)
+    categorias = db(db.categoria).select()
+    msg = "Exibindo {} resultado(s)".format(len(categorias))
     return dict(titulo=titulo, categorias=categorias, msg_paginacao=msg)
 
 @auth.requires_login()
 def inserir():
+    response.funcionalidade = 'Inserir'
+    titulo = 'Nova Categoria'
     form = SQLFORM(db.categoria, submit_button='Salvar')
     if form.process().accepted:
         session.flash = 'Categoria #%s cadastrada com sucesso!' %(form.vars.id)
@@ -51,6 +28,8 @@ def inserir():
 
 @auth.requires_login()
 def editar():
+    response.funcionalidade = 'Editar'
+    titulo = 'Editar Categoria'
     categoria = db.categoria(request.args(0)) or redirect(URL('listar'))
     form = SQLFORM(db.categoria, categoria, submit_button='Salvar')
     if form.process().accepted:
@@ -58,7 +37,7 @@ def editar():
         redirect(URL('listar'))
     elif form.errors:
          response.flash = 'Erros no formulário!'
-    return dict(form=form)
+    return dict(form=form, titulo=titulo)
 
 @auth.requires_login()
 def excluir():
